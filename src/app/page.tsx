@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import axios from 'axios'
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import { CsrfToken } from './types'
 
 export const Home = () => {
@@ -20,7 +20,7 @@ export const Home = () => {
 
 
   return (
-    <main className='p-10'>
+    <main>
       <Header />
     </main>
   )
