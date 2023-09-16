@@ -1,3 +1,4 @@
+import { useTheme } from "../hooks/useTheme";
 import { CharRelativeSize } from "../themes/createSpacing";
 
 export const useSpacing = (size: CharRelativeSize) => {

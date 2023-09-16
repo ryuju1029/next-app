@@ -1,4 +1,13 @@
-import { CreatedPaletteTheme } from "./CreatedPaletteTheme";
+import { CreatedPaletteTheme } from "./createPalette";
+import { CreatedColorTheme } from "./createColor";
+import { CreatedSizeTheme } from "./createSize";
+import { CreatedFontSizeTheme } from "./createFontSize";
+import { CreatedLeading } from "./createLeading";
+import {
+  CreatedSpacingTheme,
+  CreatedSpacingByCharTheme,
+} from "./createSpacing";
+import { CreatedBreakpointTheme } from "./createBreakpoint";
 
 export interface CreatedTheme {
   /**
@@ -16,13 +25,4 @@ export interface CreatedTheme {
   spacingByChar: CreatedSpacingByCharTheme;
   space: CreatedSpacingByCharTheme;
   breakpoint: CreatedBreakpointTheme;
-  /**
-   * @deprecated The frame property will be deprecated, please use border or radius property instead
-   */
-  frame: CreatedFrameTheme;
-  border: CreatedBorderTheme;
-  radius: CreatedRadiusTheme;
-  interaction: CreatedInteractionTheme;
-  shadow: CreatedShadowTheme;
-  zIndex: CreatedZindexTheme;
 }
