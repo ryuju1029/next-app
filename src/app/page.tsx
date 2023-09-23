@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import axios from "axios";
 
 import { Header } from "./components/Header";
+import { Cluster } from "./components/Cluster";
 
 import { CsrfToken } from "./types";
 
@@ -21,7 +22,9 @@ export const Home = () => {
 
   return (
     <main>
-      <Header />
+      <Cluster>
+        <Header />
+      </Cluster>
     </main>
   );
 };
