@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import axios from "axios";
 
-import { Header } from "./components/Header";
+import { Header } from "./components/Header/page";
 import { Cluster } from "./components/Cluster";
 
 import { CsrfToken } from "./types";
