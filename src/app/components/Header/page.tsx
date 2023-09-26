@@ -17,9 +17,10 @@ export const Header = () => {
 };
 
 const Wrapper = styled(Cluster)`
-  background-color: #f5f5f5;
+  background-color: #999;
   width: 100%;
   padding: 10px 20px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
 `;
