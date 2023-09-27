@@ -3,14 +3,22 @@ import styled from "styled-components";
 import Link from "next/link";
 import { Cluster } from "../Cluster";
 
-export const Header = () => {
+type Header = {
+  setOpen: (open: boolean) => void;
+};
+
+export const Header = (props: Header) => {
+  const { setOpen } = props;
+
   return (
     <Wrapper>
       <Title>
         <Link href={"/"}>Blog</Link>
       </Title>
       <Nav>
-        <Link href={"/"}>記事を書く</Link>
+        <Link href={"/"} onClick={() => setOpen(true)}>
+          記事を書く
+        </Link>
       </Nav>
     </Wrapper>
   );
