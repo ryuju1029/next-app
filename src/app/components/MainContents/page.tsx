@@ -16,6 +16,14 @@ export const MainContents = () => {
 
 const Wrapper = styled.div`
   display: flex;
+  padding: 0 10%;
+  width: 100%;
+
+  @media screen and (max-width: 700px) {
+    display: block;
+    width: 100%;
+    padding: 0 50px;
+  }
 `;
 
 export default MainContents;
