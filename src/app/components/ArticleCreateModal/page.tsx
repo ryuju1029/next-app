@@ -12,14 +12,25 @@ type ArticleCreateModal = {
 };
 
 export const ArticleCreateModal = (props: ArticleCreateModal) => {
+  const { setOpen } = props;
+
+  const CloseModal = (setOpen: Dispatch<boolean>) => {
+    setOpen(false);
+  };
+
   return (
     <Background>
       <Wrapper>
         <Input placeholder={"URL"} height={"50px"} />
         <Input placeholder={"タイトル"} height={"50px"} />
         <Textarea placeholder={"本文"} height={"300px"} />
-        <Button text={"投稿する"} />
-        <Button text={"戻る"} />
+        <Button text={"投稿する"} width={"50%"} />
+        <Button
+          text={"戻る"}
+          width={"50%"}
+          functions={CloseModal}
+          setState={setOpen}
+        />
       </Wrapper>
     </Background>
   );

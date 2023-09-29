@@ -8,7 +8,7 @@ import { MainContents } from "./components/MainContents/page";
 import { New } from "../app/articles/new/page";
 
 export const Home = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <main>
