@@ -8,14 +8,14 @@ import { MainContents } from "./components/MainContents/page";
 import { New } from "../app/articles/new/page";
 
 export const Home = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <main>
       <Cluster>
         <Header setOpen={setOpen} />
         <MainContents />
-        <New open={open} />
+        <New open={open} setOpen={setOpen} />
         <Footer />
       </Cluster>
     </main>

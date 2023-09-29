@@ -1,17 +1,25 @@
 "use client";
 import styled from "styled-components";
+import Button from "../Button/page";
+import { Dispatch } from "react";
 
 type InputProps = {
   height: string;
 };
 
-export const ArticleCreateModal = () => {
+type ArticleCreateModal = {
+  setOpen: Dispatch<boolean>;
+};
+
+export const ArticleCreateModal = (props: ArticleCreateModal) => {
   return (
     <Background>
       <Wrapper>
         <Input placeholder={"URL"} height={"50px"} />
         <Input placeholder={"タイトル"} height={"50px"} />
         <Textarea placeholder={"本文"} height={"300px"} />
+        <Button text={"投稿する"} />
+        <Button text={"戻る"} />
       </Wrapper>
     </Background>
   );
