@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "content": "This is my first post",
+      "created_at": "2023-10-21 00:00:00"
+    },
+    {
+      "id": 1,
+      "title": "Hello World 2",
+      "content": "This is my first post 2",
+      "created_at": "2023-10-21 00:00:00"
+    }
+  ]
+}
