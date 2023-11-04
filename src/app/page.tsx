@@ -12,7 +12,6 @@ export const Home = () => {
   const [articles, setArticles] = useState<Aritcle[]>([]);
   const [open, setOpen] = useState(false);
 
-  // style_componentsサーバーサイドコンポーネントは相性が悪いためクライアントサイドで使用する
   useEffect(() => {
     const fetchArticles = async () => {
       const result = await getAllArticles();
